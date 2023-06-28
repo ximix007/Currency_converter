@@ -1,10 +1,10 @@
 <p>exchange rate = {{this.rightExchangeRate / this.leftExchangeRate}}</p>
 <select (change)="onLeftCurrencyChange($event)">
-    <option *ngFor="let rate of Rates" value = {{rate.cc}}> {{rate.text}} </option>
+  <option *ngFor="let rate of Rates" value = {{rate.cc}}> {{rate.text}} </option>
 </select>
 <input id="leftinput" type = "number" value="{{leftCurrencyCount}}" (change)="onLeftNumberChange($event)"/>
 <br/>
 <select (change)="onRightCurrencyChange($event)">
-    <option *ngFor="let rate of Rates" value = {{rate.cc}}> {{rate.text}} </option>
+  <option *ngFor="let rate of Rates" value = {{rate.cc}}> {{rate.text}} </option>
 </select>
 <input id="rightinput" type = "number" value="{{rightCurrencyCount}}" (change)="onRightNumberChange($event)"/>
